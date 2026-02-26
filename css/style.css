@@ -871,7 +871,6 @@ a:focus {
 .portfolio .portfolio-item {
     position: relative;
     width: 45%;
-    margin-left: 3%;
 }
 
 .portfolio .portfolio-wrap {
