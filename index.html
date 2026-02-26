@@ -43,7 +43,6 @@
                         <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                         <a href="#skill" class="nav-item nav-link">Skill</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
-                     <button class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
                     </div>
                 </div>
             </div>
@@ -519,21 +518,17 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
         <script>
-$(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,       /* Isse line apne aap chalegi */
-            autoplayTimeout: 2000, /* Chalne ki speed */
-            smartSpeed: 1000,
-            responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                1000: { items: 3 }
-            }
-        });
+// Is code ko existing script mein add karein ya purane 'typed' wale part se replace karein
+if ($('.typed-text').length == 1) {
+    var typed_strings = $('.typed-text').text();
+    var typed = new Typed('.typed-text', {
+        strings: typed_strings.split(', '),
+        typeSpeed: 100,
+        backSpeed: 20,
+        smartBackspace: false,
+        loop: true
     });
-            
+}
 </script>
 
     </body>
